@@ -1,7 +1,7 @@
 import { ReactElement } from "react"
 import useCart from "../Hooks/useCart"
 import useProduct from "../Hooks/useProuct"
-import { ProductsContextType } from "../context/ProductsProvider"
+// import { ProductsContextType } from "../context/ProductsProvider"
 import Product from "./Product"
 
 
@@ -31,7 +31,7 @@ const ProductList = () => {
     }
 
     const content =(
-        <main className="main--products">
+        <main className=" w-[100%-32px] mx-8 my-10 grid grid-cols-1 md:grid-cols-3 gap-5">
             {PageContent}
         </main>
     )

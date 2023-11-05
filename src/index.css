@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
     margin: 0;
@@ -132,6 +135,18 @@ img {
     flex-flow: column;
     gap: 1em;
 }
+.star {
+    color: gold; /*Set your preferred star color*/
+    font-size: 1.5em; /* Adjust the size as needed*/
+}
+  
+  .star.filled {
+    color: gold;
+  }
+  
+  .star.empty {
+    color: #ccc; /* Define a color for empty stars */
+  }
 
 @media screen and (min-width: 601px) {
     .product {
