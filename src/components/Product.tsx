@@ -16,7 +16,7 @@ const Product = ({product,dispatch,REDUCER_ACTIONS,inCart}:PropsType) => {
         payload: {...product, qty:1}
     })
 
-    const itemInCart = inCart? 'Item in Cart : Yes': null;
+    const itemInCart = inCart? 'Item in Cart : ✅': null;
 
     const content =(
       <article className="w-full px-5 py-5 shadow-lg relative rounded-lg border"> 
@@ -31,8 +31,11 @@ const Product = ({product,dispatch,REDUCER_ACTIONS,inCart}:PropsType) => {
                 ))}
               </div>
             <span>Review :{rating.count}</span>
+           
           </div>
+          <p>{itemInCart}</p>
           </div>
+          
           <button onClick={onAddToCart} className="px-4 py-2 w-[calc(100%-40px)] mt-4 shadow rounded-lg bg-sky-700 absolute bottom-4">Add To Cart</button>
       </article>
     )
