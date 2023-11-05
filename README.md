@@ -1,3 +1,6 @@
+# Project Features
+- this project is designed with tailwind CSS and React,TypeScript
+- this project is responsive in all devices
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
